@@ -52,5 +52,5 @@ stages:
     - task: AzureWebAppContainer@1
       inputs:
        appName: $(WebAppName)
-       azureSubscription: 'Resource Manager - pushInsights'
+       azureSubscription: 'pushInsightsDevBuildPipeline01'
        imageName: $(RegistryName)/$(webRepository):$(build.buildId)
